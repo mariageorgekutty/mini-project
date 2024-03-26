@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Combined Page</title>
+  <style>
+    /* Styles for the first section */
+    .first-section {
+      background-image: url("children.jpg");
+      background-attachment: fixed;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-left: 0;
+      padding-right: 0;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      color: black;
+      text-align: center; /* Align text to the center */
+      height: 100vh;  /* Ensure full viewport height */
+      margin-top: 0vh; /* Remove default margin */
+      margin-left: 0px;
+      margin-right: 0px;
+
+    }
+
+    /* Styles for the welcome text */
+    .welcome-text {
+      font-size: 36px; /* Set font size */
+      color: #8B4513; /* Light brown color */
+      margin-top: 30px; /* Increase space between image and text */
+      animation: reveal 2s forwards; /* Apply the animation */
+    }
+
+    /* Styles for the sub text */
+    .sub-text {
+      font-size: 24px; /* Set font size */
+      color: #8B4513; /* Light brown color */
+      margin-top: 20px; /* Increase space between welcome text and subtext */
+      font-weight: bold; /* Make the subtext bold */
+      animation: reveal 2s forwards; /* Apply the animation */
+    }
+
+    /* Keyframe animation */
+    @keyframes reveal {
+      from {
+        opacity: 0;
+        transform: translateY(-50%);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Styles for the second section */
+    .second-section {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; /* Align items in a column */
+      background-color: #f0f0f0; /* Set a light background color */
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column; /* Align items in a column */
+    }
+    .box-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+    }
+    .box {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      margin: 10px;
+      overflow: hidden; /* Hide overflowing content */
+      border-radius: 10px; /* Add some rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+      transition: transform 0.3s ease; /* Add a smooth transition */
+    }
+    .box:hover {
+      transform: scale(1.05); /* Scale up the box on hover */
+    }
+    .box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensure the image covers the entire box */
+    }
+    .box-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+      color: white;
+      font-size: 24px;
+      opacity: 0; /* Hidden by default */
+      transition: opacity 0.3s; /* Smooth transition for opacity */
+    }
+    .box:hover .box-overlay {
+      opacity: 1; /* Show overlay on hover */
+    }
+    .box-overlay a {
+      color: inherit; /* Inherit color from parent */
+      text-decoration: none; /* Remove underline */
+    }
+  </style>
+</head>
+<body>
+  <!-- First section -->
+  <div class="first-section">
+    <div class="welcome-text">WELCOME TO INTELLILEARN</div>
+    <div class="sub-text">Unlock the potential of your child with IntelliLearn</div>
+  </div>
+
+  <!-- Second section -->
+  <div class="second-section">
+    <div class="container">
+      <div class="box-container">
+        <div class="box">
+          <img src="C:\mini project\mathss.jpeg" alt="Mathematics">
+          <div class="box-overlay"><a href="mathematics.html">MATHEMATICS</a></div>
+        </div>
+        <div class="box">
+          <img src="C:\mini project\reading.jpg" alt="Reading">
+          <div class="box-overlay"><a href="reading.html">READING</a></div>
+        </div>
+      </div>
+      <div class="box-container">
+        <div class="box">
+          <img src="C:\mini project\memoryy.jpg" alt="Memory">
+          <div class="box-overlay"><a href="memory.html">MEMORY</a></div>
+        </div>
+        <div class="box">
+          <img src="C:\mini project\iq.png" alt="IQ">
+          <div class="box-overlay"><a href="iq.html">IQ</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

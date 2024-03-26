@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Velvet voyages</title>
+  <style>
+    body {
+      background-image: url("children.jpg");
+      background-attachment: fixed;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-left: 0;
+      padding-right: 0;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      color: black;
+      text-align: center; /* Align text to the center */
+    }
+
+    .welcome-text {
+      font-size: 36px; /* Set font size */
+      color: #8B4513; /* Light brown color */
+      margin-top: 30px; /* Increase space between image and text */
+      animation: reveal 2s forwards; /* Apply the animation */
+    }
+
+    .sub-text {
+      font-size: 24px; /* Set font size */
+      color: #8B4513; /* Light brown color */
+      margin-top: 20px; /* Increase space between welcome text and subtext */
+      font-weight: bold; /* Make the subtext bold */
+      animation: reveal 2s forwards; /* Apply the animation */
+    }
+
+    @keyframes reveal {
+      from {
+        opacity: 0;
+        transform: translateY(-50%);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="welcome-text">WELCOME TO INTELLILEARN</div>
+  <div class="sub-text">Unlock the potential of your child with IntelliLearn</div>
+</body>
+</html>
